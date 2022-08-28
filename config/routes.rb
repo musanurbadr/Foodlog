@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  resources :entri
-  root to:"entries#indx"
+  resources :entries
+  root to:"entries#index"
 end
