@@ -1,6 +1,9 @@
-<p id="notice"><%= notice %></p>
 
-<h1>Entries</h1>
+<% content_for :title do%>
+    Foodlog &ndash; <%=DateTime.now%>
+<% end %>
+
+
 
 <table>
   <thead>

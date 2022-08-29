@@ -1,5 +1,5 @@
-<section class="hero is-danger is-small">
-<section class="hero is-info is-small">
+<section class="hero is-danger  is-mini is-small  ">
+
 
   <!-- Hero head: will stick at the top -->
   <div class="hero-head">
@@ -31,7 +31,7 @@
     <div class="container has-text-centered">
       <h1 class="title">
         <% if content_for(:title) %>
-            <% yield:title %>
+            <%= yield :title %>
         <% else %>
             Foodlog
         <% end %>
