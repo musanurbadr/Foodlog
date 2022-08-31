@@ -1,42 +1,47 @@
-<%= form_with(model: entry, local: true) do |form| %>
-  <% if entry.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(entry.errors.count, "error") %> prohibited this entry from being saved:</h2>
+<%= form_with(model: @entry, local: true) do |form| %>
+  <% if @entry.errors.any? %>
 
+    <div class = "message is-danger">
+      <div class="message-headear">
+      <p><%= pluralize(entry.errors.count, "error") %> prohibited this entry from being saved:</h2>
+      saved:</p>
+      </div>
+
+    <div class ="message-body">
       <ul>
       <% entry.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
       </ul>
-    </div>
+    <div>
+   </div>
   <% end %>
 
   <div class="field">
-    <%= form.label :meal_type %>
-    <%= form.text_field :meal_type, id: :entry_meal_type %>
+    <%= form.label :meal_type, class: "labal" %>
+    <%= form.text_field :meal_type, id: :entry_meal_type,class: "input" %>
   </div>
 
   <div class="field">
-    <%= form.label :calories %>
-    <%= form.number_field :calories, id: :entry_calories %>
+    <%= form.label :calories, class: "labal" %>
+    <%= form.number_field :calories, id: :entry_calories,class: "input" %>
   </div>
 
   <div class="field">
-    <%= form.label :carbohydrates %>
-    <%= form.number_field :carbohydrates, id: :entry_carbohydrates %>
+    <%= form.label :carbohydrates, class: "labal" %>
+    <%= form.number_field :carbohydrates, id: :entry_carbohydrates,class: "input" %>
   </div>
 
   <div class="field">
-    <%= form.label :fats %>
-    <%= form.number_field :fats, id: :entry_fats %>
+    <%= form.label :fats, class: "labal" %>
+    <%= form.number_field :fats, id: :entry_fats,class: "input" %>
   </div>
 
   <div class="field">
-    <%= form.label :proteins %>
-    <%= form.number_field :proteins, id: :entry_proteins %>
+    <%= form.label :proteins, class: "labal" %>
+    <%= form.number_field :proteins, id: :entry_proteins,class: "input" %>
   </div>
-
   <div class="actions">
-    <%= form.submit %>
+  <%= form.submit class: "button is-success"%>
   </div>
 <% end %>
