@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/larskanis/sqlite3-ruby
+  revision: 1027509079176fcc4088dcc7638101cde617cf16
+  branch: add-gemspec
+  specs:
+    sqlite3 (1.3.13.20180326210955)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -65,8 +72,8 @@ GEM
     crass (1.0.6)
     erubi (1.11.0)
     execjs (2.8.1)
-    ffi (1.15.5)
     ffi (1.15.5-x64-mingw32)
+    ffi (1.15.5-x64-unknown)
     globalid (1.0.0)
       activesupport (>= 5.0)
     i18n (1.12.0)
@@ -89,10 +96,10 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.13.8-x64-mingw32)
       racc (~> 1.4)
-    nokogiri (1.13.8-x86_64-linux)
+    nokogiri (1.13.8-x64-unknown)
       racc (~> 1.4)
-    pg (1.4.3)
     pg (1.4.3-x64-mingw32)
+    pg (1.4.3-x64-unknown)
     polyamorous (2.3.0)
       activerecord (>= 5.0)
     public_suffix (5.0.0)
@@ -164,7 +171,6 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    sqlite3 (1.4.4)
     thor (1.2.1)
     thread_safe (0.3.6)
     tilt (2.0.11)
@@ -191,7 +197,7 @@ GEM
 
 PLATFORMS
   x64-mingw32
-  x86_64-linux
+  x64-unknown
 
 DEPENDENCIES
   byebug
@@ -207,11 +213,14 @@ DEPENDENCIES
   selenium-webdriver
   spring
   spring-watcher-listen (~> 2.0.0)
-  sqlite3
+  sqlite3!
   turbolinks (~> 5)
   tzinfo-data
   uglifier (>= 1.3.0)
   web-console (>= 3.3.0)
+
+RUBY VERSION
+   ruby 2.7.6p219
 
 BUNDLED WITH
    2.3.21
