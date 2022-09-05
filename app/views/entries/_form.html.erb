@@ -3,15 +3,15 @@
 
     <div class = "message is-danger">
       <div class="message-headear">
-      <p><%= pluralize(entry.errors.count, "error") %> prohibited this entry from being saved:</h2>
+      <p><%= pluralize(@entry.errors.count, "error") %> prohibited this entry from being saved:</h2>
       saved:</p>
       </div>
 
     <div class ="message-body">
       <ul>
-      <% entry.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
+        <% @entry.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
       </ul>
     <div>
    </div>
